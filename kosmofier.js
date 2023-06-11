@@ -34,11 +34,6 @@
         var regex = /([\w-']*?[kcq]+[aou]+[sz]+)([\w-']*)/gi;
         var replacingFormat = "$&, or some say, $1m$2";
 
-        if(regex.test(value))
-        {
-            var a = 1;
-        }
-
         textNode.nodeValue = value.replaceAll(regex, replacingFormat);
     }
 
